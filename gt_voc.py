@@ -37,6 +37,7 @@ class DataSetMaker:
             self.drawing = False
             
             print("x:%d, y:%d, width:%d, height:%d \n" %(self.x, self.y, self.width, self.height))
+            self.faces_list.append([self.x, self.y, self.width, self.height])
 
     def get_image(self, path):
         self.img = cv2.imread(path)
